@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Scheduler</title>
+			<link rel="stylesheet" href="/stylesheets/bootstrap.css" />
+			<link rel="stylesheet" href="/stylesheets/cover_style.css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+      <head>
+      <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0">
+	</head>
+    <script src="codebase/dhtmlxscheduler.js?v=4.1" type="text/javascript" charset="utf-8"></script>
+    <script src="codebase/ext/dhtmlxscheduler_agenda_view.js?v=4.1" type="text/javascript" charset="utf-8"></script>
+    <script src="codebase/ext/dhtmlxscheduler_year_view.js?v=4.1" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="codebase/dhtmlxscheduler_flat.css?v=4.1" type="text/css" media="screen" title="no title" charset="utf-8">
+    <script src="codebase/ext/dhtmlxscheduler_minical.js?v=4.1" type="text/javascript" charset="utf-8"></script>
+	<body>
+	<div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Scheduler</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  {{#if user}}
+                    <li class="active"><a href="/">Home</a></li>
+                    <li><a href="/users/logout">Log Out</a></li>
+                  {{else}}
+                    <li><a href="/users/login">Login</a></li>
+                    <li><a href="/users/register">Register</a></li>
+                  {{/if}}
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              {{#if success_msg}}
+                <div class="alert alert-success">{{success_msg}}</div>
+              {{/if}} 
+              {{{body}}}
+            </div> 
+          </div>
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+              <p>Copyright &copy; 2017 Adam Costarino</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	</body>
+  <script>
+    $(function () {
+      var current_page_URL = location.href;
+      $('a').each(function () {
+        var target_URL = $(this).prop('href');
+        if (target_URL == current_page_URL) {
+          $('nav a').parents('li, ul').removeClass('active');
+          $(this).parent('li').addClass('active');
+          return false;
+        }
+      });
+    });
+  </script>
+
+</html>
