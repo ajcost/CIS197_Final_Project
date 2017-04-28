@@ -1,5 +1,4 @@
-# Scheduler for Group Collaboration
-
+# Scheduler For Group Collaboration
 This app was intended to create a scheduler for a group with collaborative ability using MongoDB. Groups could login and logout of specific accounts and keep schedules collaboratively. On top of this, a download button is being added for Calendar export file.
 
 ## Getting Started
@@ -8,7 +7,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-For both project folders you must only need node and mongo installed on your system. By running:
+For both project folders you must only need Node.js and MongoDB installed on your system. By running:
 
 ```
 node package.json
