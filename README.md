@@ -1,7 +1,6 @@
 # Scheduler for Group Collaboration
 
-This app was intended to create a scheduler for a group with collaborative ability using MongoDB. Groups could login and logout of specific accounts
-and keep schedules collaboratively. On top of this, a download button is being added for Calendar export file.
+This app was intended to create a scheduler for a group with collaborative ability using MongoDB. Groups could login and logout of specific accounts and keep schedules collaboratively. On top of this, a download button is being added for Calendar export file.
 
 ## Getting Started
 
@@ -27,7 +26,7 @@ the dependencies will be installed.
 
 ## Authors
 
-* **Adam Costarino** - *Initial work* - [Github](https://github.com/ajcost)
+* **Adam Costarino** - [Github](https://github.com/ajcost)
 
 ## License
 
