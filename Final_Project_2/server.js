@@ -31,12 +31,6 @@ server.set('views', path.join(__dirname, 'views'));
 server.engine('handlebars', handlebars({defaultLayout: 'layout'}));
 server.set('view engine', 'handlebars');
 
-// Set Middleware
-server.use(bodyParser.json());
-server.use(bodyParser.urlencoded({extended: false}));
-server.use(cookieParser());
-
-// Set Static Folder
 server.use(express.static(path.join(__dirname, 'public')));
 
 server.use(session({
@@ -44,6 +38,11 @@ server.use(session({
   saveUninitialized : true,
   resave : true
 }));
+
+// Set Middleware
+server.use(bodyParser.json());
+server.use(bodyParser.urlencoded({extended: false}));
+server.use(cookieParser());
 
 server.use(passport.initialize());
 server.use(passport.session());
