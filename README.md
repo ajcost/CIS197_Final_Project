@@ -1,5 +1,4 @@
-
-Scheduler For Group Collaboration
+# Scheduler For Group Collaboration
 
 This app was intended to create a scheduler for a group with collaborative ability using MongoDB. Groups could login and logout of specific accounts and keep schedules collaboratively. On top of this, a download button is being added for Calendar export file.
 
@@ -24,6 +23,9 @@ the dependencies will be installed.
 * [Express.js](https://expressjs.com/) - Web application framework for Node.js
 * [Handlebars](https://github.com/ericf/express-handlebars) - Express Handlebars view engine that quote: 'doesn't suck'. Handlebars.js html templating package.
 * [Passport](http://passportjs.org/) - Authentication for Node.js app
+* [Bcryptjs](https://www.npmjs.com/package/bcryptjs) - Javascript Bcrypt binding for Node.js. Bcrypt is a password hashing function, resistant to many types of attacks.
+* [DHtmlX Scheduler](https://dhtmlx.com/docs/products/dhtmlxScheduler/) - Javascript Scheduling codebase.
+* [Bootstrap](http://getbootstrap.com/getting-started/#examples) - HTML templating
 
 ## Authors
 
@@ -33,7 +35,13 @@ the dependencies will be installed.
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
+## Acknowledgments (Read tutorials and materials)
 
-* Hat tip to anyone who's code was used
-* Inspiration
+* http://passportjs.org/docs/username-password
+* http://passportjs.org/docs/authenticate
+* http://passportjs.org/docs/configure
+* https://www.npmjs.com/package/bcrypt
+* https://scotch.io/tutorials/easy-node-authentication-setup-and-local
+* http://getbootstrap.com/examples/cover/
+* https://scotch.io/tutorials/using-mongoosejs-in-node-js-and-mongodb-applications
+
