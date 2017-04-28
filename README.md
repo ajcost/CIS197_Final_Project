@@ -1,5 +1,5 @@
 
-# Scheduler For Group Collaboration
+Scheduler For Group Collaboration
 
 This app was intended to create a scheduler for a group with collaborative ability using MongoDB. Groups could login and logout of specific accounts and keep schedules collaboratively. On top of this, a download button is being added for Calendar export file.
 
