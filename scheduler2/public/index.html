@@ -18,12 +18,12 @@
 <script type="text/javascript" charset="utf-8">
     function init() {
         scheduler.config.xml_date="%Y-%m-%d %H:%i";
-        scheduler.init('scheduler_here',new Date(2017,4,28),"month");
-        scheduler.templates.xml_date = function(value){ return new Date(value); };
-        scheduler.load("/data", "json");    
-        var dp = new dataProcessor("/data");
-        dp.init(scheduler);
-        dp.setTransactionMode("POST", false);
+        scheduler.config.prevent_cache = true;
+        scheduler.xy.margin_top=30;
+        
+        scheduler.init('scheduler_here',new Date(2017, 4,28), "month");
+        scheduler.load("data/data.ical","ical");
+
     }
     function download() {
         var form = document.forms[0];

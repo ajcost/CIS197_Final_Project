@@ -22,6 +22,7 @@ the dependencies will be installed.
 * [Mongoose](http://mongoosejs.com/) - ODM for MongoDB that works with Node.js
 * [Express.js](https://expressjs.com/) - Web application framework for Node.js
 * [Handlebars](https://github.com/ericf/express-handlebars) - Express Handlebars view engine that quote: 'doesn't suck'. Handlebars.js html templating package.
+* [BodyParser](https://github.com/expressjs/body-parser) - Middleware required to handle requests for Node.js
 * [Passport](http://passportjs.org/) - Authentication for Node.js app
 * [Bcryptjs](https://www.npmjs.com/package/bcryptjs) - Javascript Bcrypt binding for Node.js. Bcrypt is a password hashing function, resistant to many types of attacks.
 * [DHtmlX Scheduler](https://dhtmlx.com/docs/products/dhtmlxScheduler/) - Javascript Scheduling codebase.
