@@ -45,4 +45,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * https://scotch.io/tutorials/easy-node-authentication-setup-and-local
 * http://getbootstrap.com/examples/cover/
 * https://scotch.io/tutorials/using-mongoosejs-in-node-js-and-mongodb-applications
+* https://dhtmlx.com/blog/using-dhtmlxscheduler-with-node-js/
 
